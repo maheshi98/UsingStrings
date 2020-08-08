@@ -17,32 +17,33 @@ public class ActivityOne extends AppCompatActivity {
         textView2 = findViewById(R.id.textView2);
         textView2.setText(R.string.Msg2);
 
-       Log.i(tag: "LifeCycle" , msg:"onCreate() invoked");
+       Log.i("Lifecycle", "onCreate() invoked");
+
     }
     @Override
     protected void onStart(){
         super.onStart();
-        Log.i(tag: "LifeCycle" , msg: "onStart()");
+        Log.i("LifeCycle", "onStart() invoked");
     }
     @Override
     protected void onRestart(){
         super.onRestart();
-        Log.i(tag: "LifeCycle" , msg: "onRestart() invoked");
+        Log.i("LifeCycle", "onRestart() invoked");
     }
     @Override
     protected void onPause(){
         super.onPause();
-        Log.i(tag: "LifeCycle" , msg: "onPause() invoked");
+        Log.i("LifeCycle", "onPause() invoked");
     }
     @Override
     protected void onStop(){
         super.onStop();
-        Log.i(tag: "LifeCycle" , msg: "onStop() invoked");
+        Log.i("LifeCycle", "onStop() invoked");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i(tag: "LifeCycle" , msg: "onDestroy() invoked");
+        Log.i("LifeCycle", "onDestroy() invoked");
     }
 }
